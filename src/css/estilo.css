@@ -1,0 +1,40 @@
+/*  RESET BÁSICO */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.logo {
+    width: 100px;
+    height: 70px;
+}
+.cabecalho {
+    background: black;
+    padding: 20px;
+}
+.cabecalho-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho-menu {
+    list-style: none;
+    display: flex;
+}
+.cabecalho-menu li{
+    margin-left: 20px;
+}
+.cabecalho-menu a {
+    color: white;
+    text-decoration: none;
+}
+.banner {
+    background-image: url(../assets/Game6.jpg);
+    background-size: cover;
+    height: 500px;
+}
