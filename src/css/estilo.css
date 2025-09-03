@@ -17,6 +17,10 @@ body {
     background: black;
     padding: 20px;
 }
+.cabeçalho:hover{
+    cursor: pointer;
+    color: #000;
+}
 .cabecalho-nav {
     display: flex;
     justify-content: space-between;
@@ -37,4 +41,93 @@ body {
     background-image: url(../assets/Game6.jpg);
     background-size: cover;
     height: 500px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* PSEUDO ELEMENTO QUE REALIZA UMA AÇÃO ANTES OU DEPOIS */
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.banner-conteudo{
+    width: 600px;
+    position: relative;
+    z-index: 2;
+}
+.banner-titulo{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.banner-descricao{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.banner-assistir{
+    background: #e50914;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+}
+.banner-assistir:hover{
+    box-shadow: 5px 5px 8px black;
+    transition: 0.5s;
+    transform: scale(110%);
+    cursor: pointer;
+}
+.sessao-filmes{
+    padding: 20px;
+}
+.filme-titulo{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.carrossel{
+    position: relative;
+    overflow: hidden;
+}
+.carrossel img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.carrossel-lista{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carrossel-item{
+    width: 200px;
+    padding: 10px;
+}
+.btn-carrossel{
+    position: absolute;
+    top: 50%;
+    transition: translateY(-50%);
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: yellow;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-anterior{
+    left: 0;
+}
+.btn-proximo{
+    right: 0;
+}
+footer{
+    background: #000;
+    padding: 20px;
+    text-align: center;
 }
