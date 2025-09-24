@@ -4,39 +4,48 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     background: black;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
 }
+
 .logo {
     width: 100px;
     height: 70px;
 }
+
 .cabecalho {
     background: black;
     padding: 20px;
 }
-.cabeçalho:hover{
+
+.cabeçalho:hover {
     cursor: pointer;
     color: #000;
 }
+
 .cabecalho-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .cabecalho-menu {
     list-style: none;
     display: flex;
 }
-.cabecalho-menu li{
+
+.cabecalho-menu li {
     margin-left: 20px;
 }
+
 .cabecalho-menu a {
     color: white;
     text-decoration: none;
 }
+
 .banner {
     background-image: url(../assets/Game6.jpg);
     background-size: cover;
@@ -47,8 +56,9 @@ body {
     align-items: center;
     position: relative;
 }
+
 /* PSEUDO ELEMENTO QUE REALIZA UMA AÇÃO ANTES OU DEPOIS */
-.banner::before{
+.banner::before {
     content: "";
     position: absolute;
     top: 0;
@@ -58,20 +68,25 @@ body {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-.banner-conteudo{
+
+.banner-conteudo {
     width: 600px;
     position: relative;
     z-index: 2;
 }
-.banner-titulo{
+
+.banner-titulo {
     font-size: 3rem;
     margin-bottom: 20px;
+
 }
-.banner-descricao{
+
+.banner-descricao {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
-.banner-assistir{
+
+.banner-assistir {
     background: #e50914;
     padding: 10px 30px;
     border-radius: 20px;
@@ -79,39 +94,48 @@ body {
     border: none;
     margin: 0 10px;
 }
-.banner-assistir:hover{
+
+.banner-assistir:hover {
     box-shadow: 5px 5px 8px black;
     transition: 0.5s;
     transform: scale(110%);
     cursor: pointer;
 }
-.sessao-filmes{
+
+.sessao-filmes {
     padding: 20px;
 }
-.filme-titulo{
+
+.filme-titulo {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-.carrossel{
+
+.carrossel {
     position: relative;
     overflow: hidden;
 }
-.carrossel img{
+
+.carrossel img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 10px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }
-.carrossel-lista{
+
+.carrossel-lista {
     display: flex;
     transition: transform 0.5s ease-in-out;
+
 }
-.carrossel-item{
+
+.carrossel-item {
     width: 200px;
     padding: 10px;
 }
-.btn-carrossel{
+
+.btn-carrossel {
     position: absolute;
     top: 50%;
     transition: translateY(-50%);
@@ -121,82 +145,46 @@ body {
     padding: 10px;
     cursor: pointer;
 }
-.btn-anterior{
+
+.btn-anterior {
     left: 0;
 }
-.btn-proximo{
+
+.btn-proximo {
     right: 0;
 }
-footer{
+
+footer {
     background: #000;
     padding: 20px;
     text-align: center;
 }
+
 /* perfis */
-header{
-width:100%;
-height:70px;
-background:#1A1D1F;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding: 0 10px; /* Adicionado para controlar o espaçamento */
+header {
+    width: 100%;
+    height: 70px;
+    background: #1A1D1F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    /* Adicionado para controlar o espaçamento */
 }
-#logo{
-width: 100px;
-height: 50px;
-border-radius: 20px;
+
+#logo {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
 }
-.btn{
-width:100px;
-height:40px;
-font-weight:bold;
-border-radius: 20px;
-background:#F2A341;
-color:#000;
-border: none;
-cursor: pointer;
-}
-/* Seção de Perfis */
-#perfil{
-width:100%;
-min-height:555px; /* Usado min-height para flexibilidade */
-display:flex;
-justify-content:center;
-align-items:center;
-background:#000;
-padding: 20px 0; /* Adicionado para dar um respiro */
-}
-.perfis-container{
-width:90%;
-max-width: 900px; /* Definido um máximo para evitar quebra em telas muito grandes */
-display:flex;
-flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-justify-content:center; /* Centraliza os itens */
-gap: 20px; /* Espaço entre os cards */
-}
-.perfil-card{
-display:flex;
-flex-direction:column;
-align-items:center;
-text-align: center;
-}
-.perfil-card h3{
-color:#fff;
-font-size:20px;
-margin-top: 10px; /* Espaço entre a imagem e o nome */
-}
-.perfil-img{
-width:120px;
-height:120px;
-border:2px solid #fff;
-border-radius:100%;
-object-fit: cover; /* Recorta a imagem para preencher o contêiner sem distorcê-la */
-}
-.perfil-img-link {
-display: block;
-width: 120px;
-height: 120px;
-overflow: hidden;
-border-radius: 50%;
+
+.btn {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    background: #F2A341;
+    color: #000;
+    border: none;
+    cursor: pointer;
 }

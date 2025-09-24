@@ -1,0 +1,102 @@
+/*  RESET BÁSICO */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+}
+
+.cabecalho {
+    background: black;
+    padding: 20px;
+}
+
+.cabeçalho:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+.cabecalho-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-menu {
+    list-style: none;
+    display: flex;
+}
+
+.cabecalho-menu li {
+    margin-left: 20px;
+}
+
+.cabecalho-menu a {
+    color: white;
+    text-decoration: none;
+}
+#perfil {
+    width: 100%;
+    min-height: 555px;
+    /* Usado min-height para flexibilidade */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 20px 0;
+    /* Adicionado para dar um respiro */
+}
+
+.perfis-container {
+    width: 90%;
+    max-width: 900px;
+    /* Definido um máximo para evitar quebra em telas muito grandes */
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center;
+    /* Centraliza os itens */
+    gap: 20px;
+    /* Espaço entre os cards */
+}
+
+.perfil-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.perfil-card h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    /* Espaço entre a imagem e o nome */
+}
+
+.perfil-img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    object-fit: cover;
+    /* Recorta a imagem para preencher o contêiner sem distorcê-la */
+}
+
+.perfil-img-link {
+    display: block;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+}

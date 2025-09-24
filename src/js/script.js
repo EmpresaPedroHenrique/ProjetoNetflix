@@ -2,17 +2,17 @@
 const bannerItems =[
     {
         imagem:"./src/assets/Game1.jpg",
-        titulol:"Caçador de Bruxas",
+        titulo:"Caçador de Bruxas",
         descricao:"Caça Bruxar com varinhas",
     },
     {
         imagem:"./src/assets/Game2.jpg",
-        titulol:"Comedor de código",
+        titulo:"Comedor de código",
         descricao:"lancha funções  como café da tarde",
     },
     {
         imagem:"./src/assets/Game3.jpg",
-        titulol:"Coach City - Treino para vida",
+        titulo:"Coach City - Treino para vida",
         descricao:"Com grande códigos vem grandes projetos",
     }
 ];
