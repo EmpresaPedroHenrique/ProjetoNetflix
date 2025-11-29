@@ -15,6 +15,16 @@ body {
     width: 100px;
     height: 70px;
 }
+.icon {
+    
+    display: flex;
+    gap: 20px;      /* distância entre as imagens */
+    margin-right: 2rem;
+}
+
+.icon img {
+    width: 26px;
+}
 
 .cabecalho {
     background: black;
@@ -23,22 +33,27 @@ body {
 
 .cabeçalho:hover {
     cursor: pointer;
-    color: #000;
+    color: #000000;
 }
 
 .cabecalho-nav {
     display: flex;
     justify-content: space-between;
+    margin-left: 1rem;
     align-items: center;
 }
 
 .cabecalho-menu {
     list-style: none;
     display: flex;
+    margin-left: 20rem;
+
 }
 
 .cabecalho-menu li {
-    margin-left: 20px;
+    margin-left: 2rem;
+    
+
 }
 
 .cabecalho-menu a {

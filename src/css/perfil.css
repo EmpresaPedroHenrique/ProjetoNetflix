@@ -13,22 +13,24 @@ body {
 
 .logo {
     width: 100px;
-    height: 70px;
+    height: 50px;
 }
 
 .cabecalho {
     background: black;
     padding: 20px;
+    height: 50px;
 }
 
 .cabeçalho:hover {
     cursor: pointer;
-    color: #000;
+    color: #000000;
 }
 
 .cabecalho-nav {
     display: flex;
     justify-content: space-between;
+    margin-left: 1rem;
     align-items: center;
 }
 
@@ -38,13 +40,27 @@ body {
 }
 
 .cabecalho-menu li {
-    margin-left: 20px;
+    margin-left: 2rem;
+    
+
 }
 
 .cabecalho-menu a {
     color: white;
     text-decoration: none;
 }
+
+.icon {
+    display: flex;
+    gap: 20px;      /* distância entre as imagens */
+    margin-right: 2rem;
+}
+
+.icon img {
+    width: 26px;
+}
+
+
 #perfil {
     width: 100%;
     min-height: 555px;
@@ -62,11 +78,9 @@ body {
     max-width: 900px;
     /* Definido um máximo para evitar quebra em telas muito grandes */
     display: flex;
-    flex-wrap: wrap;
-    /* Permite que os itens quebrem para a próxima linha */
     justify-content: center;
     /* Centraliza os itens */
-    gap: 20px;
+    gap: 17px;
     /* Espaço entre os cards */
 }
 
